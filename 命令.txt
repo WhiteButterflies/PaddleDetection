@@ -1,0 +1,14 @@
+python 3.8
+
+python -m pip install paddlepaddle-gpu==3.0.0rc1 -i https://www.paddlepaddle.org.cn/packages/stable/cu123/
+conda install -c conda-forge gxx_linux-64
+
+pip install -r requirements.txt
+
+python setup.py install
+
+
+
+#demo2 running
+
+python deploy/pipeline/pipeline_GUI_ZXN_V2.py --config deploy/pipeline/config/infer_cfg_pphuman.yml --video_file demo/demo2.mkv --device=gpu --draw_center_traj --cpu_threads 4
