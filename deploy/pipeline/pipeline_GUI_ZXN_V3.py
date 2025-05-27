@@ -1112,24 +1112,47 @@ class PipePredictor(object):
                         crop_input, visual=False)
                     '''added by liu for red percentage'''
                     pass
-                    # attr_color_red = [ self.detect_red_upper_body(item,threshold=0.2) for item in crop_input]
+                    attr_color_red = [ self.detect_red_upper_body(item,threshold=0.2) for item in crop_input]
                     attr_color_white = [ self.detect_white_upper_body(item,threshold=0.2) for item in crop_input]
                     # attr_color_black = [ self.detect_black_upper_body(item,threshold=0.2) for item in crop_input]
                     attr_color_purple = [ self.detect_purple_upper_body(item,threshold=0.2) for item in crop_input]
                     attr_color_yellow = [ self.detect_light_yellow_upper_body(item,threshold=0.2) for item in crop_input]
-                    for idx,item in enumerate(attr_res['output']):
-                        if self.tiaozheng:
-                            if idx ==1:
-                                item.append('Red: ' + str('True'))
-                            else:
-                                item.append('Red: ' + str('False'))
+                    '''OLD COLOR GENERATOR'''
+                    # for idx,item in enumerate(attr_res['output']):
+                    #     if self.tiaozheng:
+                    #         if idx ==1:
+                    #             item.append('Red: ' + str('True'))
+                    #         else:
+                    #             item.append('Red: ' + str('False'))
+                    #     else:
+                    #         # item.append('Red: '+str(attr_color_red[idx][0]))
+                    #         item.append('White: '+str(attr_color_white[idx][0]))
+                    #         # item.append('Black: '+str(attr_color_black[idx][0]))
+                    #         item.append('Purple: '+str(attr_color_purple[idx][0]))
+                    #         item.append('Yellow: '+str(attr_color_yellow[idx][0]))
+                    #         pass
+                    '''ended'''
+                    for idx, item in enumerate(attr_res['output']):
+                        # 取每个颜色的占比
+                        color_ratios = {
+                            # 'Black': attr_color_black[idx][1],
+                            'Purple': attr_color_purple[idx][1],
+                            'Yellow': attr_color_yellow[idx][1],
+                            'Red': attr_color_red[idx][1],
+                            'White': attr_color_white[idx][1]
+                        }
+
+                        # 找出占比最高的颜色
+                        max_color = max(color_ratios, key=color_ratios.get)
+                        max_ratio = color_ratios[max_color]
+
+                        # 设置阈值：如果所有颜色占比都很低（<0.2），判定为 Null
+                        if max_ratio < 0.2:
+                            color_label = 'Null'
                         else:
-                            # item.append('Red: '+str(attr_color_red[idx][0]))
-                            item.append('White: '+str(attr_color_white[idx][0]))
-                            # item.append('Black: '+str(attr_color_black[idx][0]))
-                            item.append('Purple: '+str(attr_color_purple[idx][0]))
-                            item.append('Yellow: '+str(attr_color_yellow[idx][0]))
-                            pass
+                            color_label = max_color
+
+                        item.append('Color: ' + color_label)
 
                     '''ended'''
 
