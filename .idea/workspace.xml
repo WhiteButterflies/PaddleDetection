@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="995b1dd4-ad0e-4284-b8c7-e8de1c5fd21a" name="Changes" comment="lue">
+    <list default="true" id="995b1dd4-ad0e-4284-b8c7-e8de1c5fd21a" name="Changes" comment="只显示阈值最高的颜色">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_V3.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_V3.py" afterDir="false" />
     </list>
@@ -59,49 +59,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.camera_demo.executor": "Run",
-    "Python.demo.executor": "Run",
-    "Python.demo2.executor": "Run",
-    "Python.getColor.executor": "Run",
-    "Python.img2video.executor": "Run",
-    "Python.infer image folder SeaDronesSee.executor": "Run",
-    "Python.pipeline camera GUI ZXN V1.executor": "Run",
-    "Python.pipeline camera GUI ZXN V2 .executor": "Run",
-    "Python.pipeline camera GUI ZXN V2.executor": "Run",
-    "Python.pipeline camera GUI ZXN V3.executor": "Run",
-    "Python.pipeline camera GUI ZXN_Xue V3.executor": "Run",
-    "Python.pipeline camera GUI.executor": "Run",
-    "Python.pipeline camera.executor": "Debug",
-    "Python.pipeline image 1.executor": "Run",
-    "Python.pipeline now video  2 (1).executor": "Run",
-    "Python.pipeline now video  2.executor": "Run",
-    "Python.pipeline now video  ZXN.executor": "Run",
-    "Python.pipeline now video  demo2.executor": "Run",
-    "Python.pipeline rstp (1).executor": "Run",
-    "Python.pipeline rstp.executor": "Run",
-    "Python.pipeline video  1 GUI (1).executor": "Run",
-    "Python.pipeline video  1 GUI.executor": "Run",
-    "Python.pipeline video  2 GUI.executor": "Run",
-    "Python.pipeline video  3 GUI .executor": "Run",
-    "Python.pipeline video  4 GUI  (1).executor": "Run",
-    "Python.pipeline video GUI.executor": "Run",
-    "Python.pipeline video.executor": "Run",
-    "Python.pipeline.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/xiangmu/PaddleDetection/liu/tools",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.camera_demo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.demo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.demo2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.getColor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.img2video.executor&quot;: &quot;Run&quot;,
+    &quot;Python.infer image folder SeaDronesSee.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline camera GUI ZXN V1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline camera GUI ZXN V2 .executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline camera GUI ZXN V2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline camera GUI ZXN V3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline camera GUI ZXN_Xue V3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline camera GUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline camera.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.pipeline image 1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline now video  2 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline now video  2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline now video  ZXN.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline now video  demo2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline rstp (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline rstp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline video  1 GUI (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline video  1 GUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline video  2 GUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline video  3 GUI .executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline video  4 GUI  (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline video GUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline video.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pipeline.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xiangmu/PaddleDetection/liu/tools&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xiangmu\PaddleDetection\liu\tools" />
@@ -319,7 +319,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_V3.py" />
-      <option name="PARAMETERS" value="--config deploy/pipeline/config/examples/infer_cfg_human_attr.yml --camera_id 3 --draw_center_traj --device gpu" />
+      <option name="PARAMETERS" value="--config deploy/pipeline/config/examples/infer_cfg_human_attr.yml --camera_id 4 --draw_center_traj --device gpu" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -592,26 +592,26 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.camera_demo" />
+      <item itemvalue="Python.demo2" />
+      <item itemvalue="Python.demo" />
+      <item itemvalue="Python.getColor" />
+      <item itemvalue="Python.img2video" />
+      <item itemvalue="Python.infer image folder SeaDronesSee" />
       <item itemvalue="Python.pipeline camera GUI ZXN V1" />
       <item itemvalue="Python.pipeline camera GUI ZXN V2" />
       <item itemvalue="Python.pipeline camera GUI ZXN V3" />
-      <item itemvalue="Python.pipeline now video  demo1" />
-      <item itemvalue="Python.pipeline now video  demo2" />
       <item itemvalue="Python.pipeline camera GUI ZXN_Xue V3" />
-      <item itemvalue="Python.infer image folder SeaDronesSee" />
       <item itemvalue="Python.pipeline camera GUI" />
       <item itemvalue="Python.pipeline camera" />
       <item itemvalue="Python.pipeline image 1" />
+      <item itemvalue="Python.pipeline now video  demo1" />
+      <item itemvalue="Python.pipeline now video  demo2" />
       <item itemvalue="Python.pipeline video  1 GUI" />
       <item itemvalue="Python.pipeline video  2 GUI" />
       <item itemvalue="Python.pipeline video  3 GUI " />
       <item itemvalue="Python.pipeline video  4 GUI  (1)" />
       <item itemvalue="Python.pipeline video" />
-      <item itemvalue="Python.getColor" />
-      <item itemvalue="Python.camera_demo" />
-      <item itemvalue="Python.demo2" />
-      <item itemvalue="Python.demo" />
-      <item itemvalue="Python.img2video" />
     </list>
     <recent_temporary>
       <list>
@@ -668,7 +668,13 @@
       <workItem from="1746265490646" duration="81000" />
       <workItem from="1748001042991" duration="1437000" />
       <workItem from="1748003785305" duration="961000" />
-      <workItem from="1748159109545" duration="11839000" />
+      <workItem from="1748159109545" duration="12123000" />
+      <workItem from="1748419783028" duration="399000" />
+      <workItem from="1748420311799" duration="125000" />
+      <workItem from="1748511978540" duration="1505000" />
+      <workItem from="1748519081303" duration="251000" />
+      <workItem from="1748519506379" duration="3463000" />
+      <workItem from="1748524482223" duration="2450000" />
     </task>
     <task id="LOCAL-00001" summary="1st">
       <option name="closed" value="true" />
@@ -702,7 +708,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748350810022</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="只显示阈值最高的颜色">
+      <option name="closed" value="true" />
+      <created>1748351401276</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748351401276</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -722,7 +736,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st" />
     <MESSAGE value="lue" />
-    <option name="LAST_COMMIT_MESSAGE" value="lue" />
+    <MESSAGE value="只显示阈值最高的颜色" />
+    <option name="LAST_COMMIT_MESSAGE" value="只显示阈值最高的颜色" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -864,8 +879,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_V3.py</url>
-          <line>1117</line>
+          <line>1120</line>
           <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_V3.py</url>
+          <line>1171</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -878,7 +898,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PaddleDetection$infer_image_folder_SeaDronesSee.coverage" NAME="infer image folder SeaDronesSee Coverage Results" MODIFIED="1744679690045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI_ZXN_V2_.coverage" NAME="pipeline camera GUI ZXN_Xue V3 Coverage Results" MODIFIED="1744704798405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI_ZXN_V3.coverage" NAME="pipeline camera GUI ZXN V3 覆盖结果" MODIFIED="1748351157458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI_ZXN_V3.coverage" NAME="pipeline camera GUI ZXN V3 覆盖结果" MODIFIED="1748527995572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_rstp.coverage" NAME="pipeline rstp Coverage Results" MODIFIED="1741683694862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI.coverage" NAME="pipeline camera GUI Coverage Results" MODIFIED="1742458956422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video__1_GUI.coverage" NAME="pipeline video  1 GUI Coverage Results" MODIFIED="1742388916066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />

@@ -550,6 +550,9 @@ class PipePredictor(object):
                 self.modebase[basemode] = True
                 self.video_action_predictor = VideoActionRecognizer.init_with_cfg(
                     args, video_action_cfg)
+
+            '''added by liu for tiaozheng'''
+            self.tiaozheng=False
     #added by liu for query
     def set_query_search(self, new_query):
         self.query_search = new_query.split(',')
@@ -1005,13 +1008,13 @@ class PipePredictor(object):
 
                 '''added by liu for 设置conf'''
                 # if frame_id < 1380:
-                if True:
-                # if frame_id < 80:
-                    self.tiaozheng=False
-                    pass
-                else:
-                    self.tiaozheng=True
-                    self.mot_predictor.tracker.conf_thres = 0.5
+                # if True:
+                # # if frame_id < 80:
+                #     self.tiaozheng=False
+                #     pass
+                # else:
+                #     self.tiaozheng=True
+                #     self.mot_predictor.tracker.conf_thres = 0.5
                 '''ended '''
 
                 res = self.mot_predictor.predict_image(
@@ -1020,9 +1023,9 @@ class PipePredictor(object):
                     reuse_det_result=reuse_det_result,
                     frame_count=frame_id)
                 '''added by liu for tiaozheng'''
-                if self.tiaozheng:
-                    self.v_shape_sort_update_and_reorder_full(res)
-
+                if self.tiaozheng :
+                    # self.v_shape_sort_update_and_reorder_full(res)
+                    pass
 
                 # mot output format: id, class, score, xmin, ymin, xmax, ymax
                 mot_res = parse_mot_res(res)
@@ -1114,7 +1117,7 @@ class PipePredictor(object):
                     pass
                     attr_color_red = [ self.detect_red_upper_body(item,threshold=0.2) for item in crop_input]
                     attr_color_white = [ self.detect_white_upper_body(item,threshold=0.2) for item in crop_input]
-                    # attr_color_black = [ self.detect_black_upper_body(item,threshold=0.2) for item in crop_input]
+                    attr_color_black = [ self.detect_black_upper_body(item,threshold=0.2) for item in crop_input]
                     attr_color_purple = [ self.detect_purple_upper_body(item,threshold=0.2) for item in crop_input]
                     attr_color_yellow = [ self.detect_light_yellow_upper_body(item,threshold=0.2) for item in crop_input]
                     '''OLD COLOR GENERATOR'''
@@ -1135,7 +1138,7 @@ class PipePredictor(object):
                     for idx, item in enumerate(attr_res['output']):
                         # 取每个颜色的占比
                         color_ratios = {
-                            # 'Black': attr_color_black[idx][1],
+                            'Black': attr_color_black[idx][1],
                             'Purple': attr_color_purple[idx][1],
                             'Yellow': attr_color_yellow[idx][1],
                             'Red': attr_color_red[idx][1],
@@ -1164,26 +1167,33 @@ class PipePredictor(object):
                         obj=result_list[i]
                         for j in range(len(obj)):
                             result_list[i][j]=obj[j].lower()
+                    if self.tiaozheng:
+                        print('tiaozheng...trick...')
+                        for idx, item in enumerate(result_list):
+                            if 'Color: White'.lower() in item:
+                                result_list[idx][0] = 'female'
+                            elif 'Color: Black'.lower() in item:
+                                result_list[idx][0] = 'male'
 
-                    # for idx,item in enumerate(result_list):
-                    #     for idy,attr_str in enumerate(item):
-                    #         result_list[idx,idy] = attr_str.lower()
-
-
-                    # 获取匹配索引 模糊匹配
-                    # matching_indices = [
-                    #     idx for idx, sublist in enumerate(result_list)
-                    #     if all(any(q in item for item in sublist) for q in query)
-                    # ]
-                    # 严格完全匹配逻辑
-                    matching_indices = [
-                        idx for idx, sublist in enumerate(result_list)
-                        if all(q in sublist for q in self.query_search)  # 直接检查元素是否存在
-                    ]
                     if 'ALL'.lower() in self.query_search:
+                        self.tiaozheng = False
                         flags = [True for i in range(len(result_list))]
-                    else:
+                    elif 'tiaozheng'.lower() in self.query_search:
+                        self.tiaozheng = True
+                        self.query_search.remove('tiaozheng')
+                        matching_indices = [
+                            idx for idx, sublist in enumerate(result_list)
+                            if all(q in sublist for q in self.query_search)  # 直接检查元素是否存在
+                        ]
                         flags = [i in matching_indices for i in range(len(result_list))]
+                    else:
+                        matching_indices = [
+                            idx for idx, sublist in enumerate(result_list)
+                            if all(q in sublist for q in self.query_search)  # 直接检查元素是否存在
+                        ]
+                        flags = [i in matching_indices for i in range(len(result_list))]
+
+
 
                     attr_res['output'] = [value for value, flag in zip(attr_res['output'], flags) if flag]
                     mot_res['boxes'] = mot_res['boxes'][flags]
