@@ -1172,7 +1172,8 @@ class PipePredictor(object):
                         for idx, item in enumerate(result_list):
                             if 'Color: White'.lower() in item:
                                 result_list[idx][0] = 'female'
-                            elif 'Color: Black'.lower() in item:
+                            # elif 'Color: Black'.lower() in item:
+                            else:
                                 result_list[idx][0] = 'male'
 
                     if 'ALL'.lower() in self.query_search:
