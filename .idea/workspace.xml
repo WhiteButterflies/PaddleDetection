@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="995b1dd4-ad0e-4284-b8c7-e8de1c5fd21a" name="Changes" comment="加了黑白衣服的trick">
+    <list default="true" id="995b1dd4-ad0e-4284-b8c7-e8de1c5fd21a" name="Changes" comment="None">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_V3.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_V3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liu/tools/camera_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/liu/tools/camera_demo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,9 +91,10 @@
     &quot;Python.pipeline video.executor&quot;: &quot;Run&quot;,
     &quot;Python.pipeline.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xiangmu/PaddleDetection/liu/tools&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xiangmu/PaddleDetection&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -319,7 +321,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_V3.py" />
-      <option name="PARAMETERS" value="--config deploy/pipeline/config/examples/infer_cfg_human_attr.yml --camera_id 3 --draw_center_traj --device gpu" />
+      <option name="PARAMETERS" value="--config deploy/pipeline/config/examples/infer_cfg_human_attr.yml --camera_id 2 --draw_center_traj --device gpu" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -592,13 +594,13 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.infer image folder SeaDronesSee" />
+      <item itemvalue="Python.pipeline camera GUI ZXN_Xue V3" />
       <item itemvalue="Python.pipeline camera GUI ZXN V1" />
       <item itemvalue="Python.pipeline camera GUI ZXN V2" />
       <item itemvalue="Python.pipeline camera GUI ZXN V3" />
       <item itemvalue="Python.pipeline now video  demo1" />
       <item itemvalue="Python.pipeline now video  demo2" />
-      <item itemvalue="Python.pipeline camera GUI ZXN_Xue V3" />
-      <item itemvalue="Python.infer image folder SeaDronesSee" />
       <item itemvalue="Python.pipeline camera GUI" />
       <item itemvalue="Python.pipeline camera" />
       <item itemvalue="Python.pipeline image 1" />
@@ -607,16 +609,16 @@
       <item itemvalue="Python.pipeline video  3 GUI " />
       <item itemvalue="Python.pipeline video  4 GUI  (1)" />
       <item itemvalue="Python.pipeline video" />
-      <item itemvalue="Python.getColor" />
       <item itemvalue="Python.camera_demo" />
       <item itemvalue="Python.demo2" />
       <item itemvalue="Python.demo" />
+      <item itemvalue="Python.getColor" />
       <item itemvalue="Python.img2video" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.getColor" />
         <item itemvalue="Python.camera_demo" />
+        <item itemvalue="Python.getColor" />
         <item itemvalue="Python.img2video" />
         <item itemvalue="Python.demo2" />
         <item itemvalue="Python.demo" />
@@ -626,8 +628,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-PY-251.23774.444" />
-        <option value="bundled-python-sdk-890ed5b35930-d9c5bdb153f4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.23774.444" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.26927.90" />
+        <option value="bundled-python-sdk-41e8cd69c857-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.90" />
       </set>
     </attachedChunks>
   </component>
@@ -677,7 +679,15 @@
       <workItem from="1748524482223" duration="2450000" />
       <workItem from="1748529664995" duration="4813000" />
       <workItem from="1748575094955" duration="1074000" />
-      <workItem from="1748584271488" duration="1956000" />
+      <workItem from="1748584271488" duration="3433000" />
+      <workItem from="1749166886448" duration="20000" />
+      <workItem from="1749167112556" duration="120000" />
+      <workItem from="1749733570576" duration="558000" />
+      <workItem from="1749801679424" duration="1000" />
+      <workItem from="1754272312698" duration="2514000" />
+      <workItem from="1754275461151" duration="378000" />
+      <workItem from="1754276276144" duration="108000" />
+      <workItem from="1754302838036" duration="254000" />
     </task>
     <task id="LOCAL-00001" summary="1st">
       <option name="closed" value="true" />
@@ -727,7 +737,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748529736566</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="None">
+      <option name="closed" value="true" />
+      <created>1748593685625</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1748593685625</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -749,7 +767,8 @@
     <MESSAGE value="lue" />
     <MESSAGE value="只显示阈值最高的颜色" />
     <MESSAGE value="加了黑白衣服的trick" />
-    <option name="LAST_COMMIT_MESSAGE" value="加了黑白衣服的trick" />
+    <MESSAGE value="None" />
+    <option name="LAST_COMMIT_MESSAGE" value="None" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -908,32 +927,32 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PaddleDetection$infer_image_folder_SeaDronesSee.coverage" NAME="infer image folder SeaDronesSee Coverage Results" MODIFIED="1744679690045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI_ZXN_V2_.coverage" NAME="pipeline camera GUI ZXN_Xue V3 Coverage Results" MODIFIED="1744704798405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI_ZXN_V3.coverage" NAME="pipeline camera GUI ZXN V3 覆盖结果" MODIFIED="1748585010096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_rstp.coverage" NAME="pipeline rstp Coverage Results" MODIFIED="1741683694862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video__1_GUI.coverage" NAME="pipeline video  1 GUI Coverage Results" MODIFIED="1742388916066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI.coverage" NAME="pipeline camera GUI Coverage Results" MODIFIED="1742458956422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video__4_GUI___1_.coverage" NAME="pipeline video  4 GUI  (1) Coverage Results" MODIFIED="1742193991936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI_ZXN_V1.coverage" NAME="pipeline camera GUI ZXN V1 Coverage Results" MODIFIED="1744253086068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_rstp.coverage" NAME="pipeline rstp Coverage Results" MODIFIED="1741683694862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_now_video__ZXN.coverage" NAME="pipeline now video  ZXN Coverage Results" MODIFIED="1742458251238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video__2_GUI.coverage" NAME="pipeline video  2 GUI Coverage Results" MODIFIED="1741784094096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_image_1.coverage" NAME="pipeline image 1 Coverage Results" MODIFIED="1742193395587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_now_video__demo2.coverage" NAME="pipeline now video  demo2 Coverage Results" MODIFIED="1743390215921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video_GUI.coverage" NAME="pipeline video GUI Coverage Results" MODIFIED="1741700418734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video.coverage" NAME="pipeline video Coverage Results" MODIFIED="1741700405561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1741696076168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/liu" />
     <SUITE FILE_PATH="coverage/PaddleDetection$demo.coverage" NAME="demo Coverage Results" MODIFIED="1741695618488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/liu" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline.coverage" NAME="pipeline rstp Coverage Results" MODIFIED="1741681438031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI_ZXN_Xue_V3.coverage" NAME="pipeline camera GUI ZXN_Xue V3 覆盖结果" MODIFIED="1748159224493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_now_video__2__1_.coverage" NAME="pipeline now video  2 (1) Coverage Results" MODIFIED="1742518952065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI_ZXN_V2.coverage" NAME="pipeline camera GUI ZXN V2 覆盖结果" MODIFIED="1748159329624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$img2video.coverage" NAME="img2video Coverage Results" MODIFIED="1744679782437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/liu/tools" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video.coverage" NAME="pipeline video Coverage Results" MODIFIED="1741700405561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video_GUI.coverage" NAME="pipeline video GUI Coverage Results" MODIFIED="1741700418734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI_ZXN_V3.coverage" NAME="pipeline camera GUI ZXN V3 Coverage Results" MODIFIED="1754302839214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline.coverage" NAME="pipeline rstp Coverage Results" MODIFIED="1741681438031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$getColor.coverage" NAME="getColor 覆盖结果" MODIFIED="1748349835610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/liu/tools" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_now_video__2.coverage" NAME="pipeline now video  2 Coverage Results" MODIFIED="1742518818961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_rstp__1_.coverage" NAME="pipeline camera Coverage Results" MODIFIED="1741693069029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_now_video__2__1_.coverage" NAME="pipeline now video  2 (1) Coverage Results" MODIFIED="1742518952065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video__3_GUI_.coverage" NAME="pipeline video  3 GUI  Coverage Results" MODIFIED="1742194272537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI_ZXN_V2.coverage" NAME="pipeline camera GUI ZXN V2 覆盖结果" MODIFIED="1748159329624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI.coverage" NAME="pipeline camera GUI Coverage Results" MODIFIED="1742458956422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$infer_image_folder_SeaDronesSee.coverage" NAME="infer image folder SeaDronesSee Coverage Results" MODIFIED="1744679690045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1741696076168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/liu" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI_ZXN_V1.coverage" NAME="pipeline camera GUI ZXN V1 Coverage Results" MODIFIED="1744253086068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video__1_GUI__1_.coverage" NAME="pipeline video  1 GUI (1) Coverage Results" MODIFIED="1742389000700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$camera_demo.coverage" NAME="camera_demo 覆盖结果" MODIFIED="1748003976118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/liu/tools" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$img2video.coverage" NAME="img2video Coverage Results" MODIFIED="1744679782437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/liu/tools" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_image_1.coverage" NAME="pipeline image 1 Coverage Results" MODIFIED="1742193395587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video__2_GUI.coverage" NAME="pipeline video  2 GUI Coverage Results" MODIFIED="1741784094096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI_ZXN_V2_.coverage" NAME="pipeline camera GUI ZXN_Xue V3 Coverage Results" MODIFIED="1744704798405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video__1_GUI.coverage" NAME="pipeline video  1 GUI Coverage Results" MODIFIED="1742388916066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_rstp__1_.coverage" NAME="pipeline camera Coverage Results" MODIFIED="1741693069029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_now_video__demo2.coverage" NAME="pipeline now video  demo2 Coverage Results" MODIFIED="1743390215921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$camera_demo.coverage" NAME="camera_demo Coverage Results" MODIFIED="1754275125591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/liu/tools" />
   </component>
 </project>
