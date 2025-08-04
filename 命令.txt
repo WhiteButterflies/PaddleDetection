@@ -12,3 +12,6 @@ python setup.py install
 #demo2 running
 
 python deploy/pipeline/pipeline_GUI_ZXN_V2.py --config deploy/pipeline/config/infer_cfg_pphuman.yml --video_file demo/demo2.mkv --device=gpu --draw_center_traj --cpu_threads 4
+
+#公安局demo
+python deploy/pipeline/pipeline_gonganju_v1.py --config deploy/pipeline/config/examples/gonganju.yml --camera_id 1 --draw_center_traj --device gpu
