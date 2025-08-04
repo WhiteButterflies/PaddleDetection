@@ -64,6 +64,9 @@ from ppvehicle.vehicle_retrograde import VehicleRetrogradeRecognizer
 from ppvehicle.lane_seg_infer import LaneSegPredictor
 
 from download import auto_download_model
+#added by liu
+import scipy.ndimage
+
 
 class ImageIOCapture:
     def __init__(self, device_name):
@@ -307,6 +310,18 @@ class PipePredictor(object):
             print('Multi-Object Tracking enabled')
         if self.with_human_attr:
             print('Human Attribute Recognition enabled')
+        #added by liu for 计算人口密度
+        self.roi_selecting = False
+        self.roi_start = None
+        self.roi_end = None
+        self.current_heatmap = None
+        self.mouse_window_name = "Paddle-Pipeline"  # imshow 用的窗口名
+        self.last_roi = None
+        self.roi_people_count = 0
+        self.show_heatmap = False
+
+        #ended
+
 
         # only for pphuman
         self.with_skeleton_action = cfg.get(
@@ -557,6 +572,42 @@ class PipePredictor(object):
     def set_query_search(self, new_query):
         self.query_search = new_query.split(',')
         self.query_search=[t.lower() for t in self.query_search]
+    #added by liu for heatmap
+    def on_mouse(self, event, x, y, flags, param):
+        if event == cv2.EVENT_LBUTTONDOWN:
+            self.roi_selecting = True
+            self.roi_start = (x, y)
+            self.roi_end = (x, y)
+        elif event == cv2.EVENT_MOUSEMOVE and self.roi_selecting:
+            self.roi_end = (x, y)
+        elif event == cv2.EVENT_LBUTTONUP:
+            self.roi_selecting = False
+            self.roi_end = (x, y)
+            self.estimate_people_in_roi()
+
+    def estimate_people_in_roi(self):
+        if self.current_heatmap is None or self.roi_start is None or self.roi_end is None:
+            return
+        x1, y1 = self.roi_start
+        x2, y2 = self.roi_end
+        x_min, x_max = sorted([x1, x2])
+        y_min, y_max = sorted([y1, y2])
+        roi = self.current_heatmap[y_min:y_max, x_min:x_max]
+        heat_sum = np.sum(roi)
+        self.roi_people_count = int(heat_sum*0.0015)  # 每人热度均值
+        self.last_roi = (x_min, y_min, x_max, y_max)
+    #显示检测框热力图
+    def generate_heatmap(self, boxes, image_shape, sigma=30):
+        heatmap = np.zeros((image_shape[0], image_shape[1]), dtype=np.float32)
+        for box in boxes:
+            x, y, w, h = box
+            cx, cy = int(x + w / 2), int(y + h / 2)
+            if 0 <= cx < image_shape[1] and 0 <= cy < image_shape[0]:
+                heatmap[cy, cx] += 1
+        heatmap = scipy.ndimage.gaussian_filter(heatmap, sigma=sigma)
+        if np.max(heatmap) > 0:
+            heatmap = heatmap / np.max(heatmap)
+        return heatmap
 
     #设置目标ID顺序，V字形排序，筛选前三个
     def v_shape_sort_update_and_reorder_full(self,res):
@@ -972,6 +1023,11 @@ class PipePredictor(object):
         video_fps = fps
 
         video_action_imgs = []
+        #主进程 用来监听划区域
+        if thread_idx == 0 and self.cfg['visual']:
+            cv2.namedWindow(self.mouse_window_name)
+            cv2.setMouseCallback(self.mouse_window_name, self.on_mouse)
+        #ended
 
         if self.with_video_action:
             short_size = self.cfg["VIDEO_ACTION"]["short_size"]
@@ -1086,7 +1142,7 @@ class PipePredictor(object):
                             writer.write(im)
                             # if self.file_name is None:  # use camera_id
                             if True:  # use camera_id
-                                cv2.imshow('Paddle-Pipeline', im)
+                                cv2.imshow(self.mouse_window_name, im)
                                 if cv2.waitKey(1) & 0xFF == ord('q'):
                                     break
                     continue
@@ -1449,7 +1505,7 @@ class PipePredictor(object):
                     writer.write(im)
                     # if self.file_name is None:  # use camera_id
                     if True: # use camera_id
-                        cv2.imshow('Paddle-Pipeline', im)
+                        cv2.imshow(self.mouse_window_name, im)
                         if cv2.waitKey(1) & 0xFF == ord('q'):
                             break
 
@@ -1605,6 +1661,33 @@ class PipePredictor(object):
             image = visualize_action(image, mot_res['boxes'],
                                      visual_helper_for_display,
                                      action_to_display)
+        '''密度热力图可视化'''
+        if mot_res is not None and len(mot_res['boxes']) > 0 and getattr(self, "show_heatmap", True):
+            boxes = mot_res['boxes'][:, 1:]  # [id, cls, score, x, y, w, h]
+            heatmap = self.generate_heatmap(boxes[:,-4:], image.shape, sigma=30)
+            self.current_heatmap = heatmap
+
+            # 映射到伪彩色
+            heatmap_color = cv2.applyColorMap((heatmap * 255).astype(np.uint8), cv2.COLORMAP_JET)
+            heatmap_color = cv2.cvtColor(heatmap_color, cv2.COLOR_BGR2RGB)
+
+            alpha = 0.4
+            image = cv2.addWeighted(image, 1 - alpha, heatmap_color, alpha, 0)
+
+            # 如果正在框选，绘制框
+            if self.roi_start and self.roi_end:
+                cv2.rectangle(image, self.roi_start, self.roi_end, (0, 255, 255), 2)
+
+            # 如果已有 ROI 则显示估算人数
+            if hasattr(self, 'roi_people_count') and self.last_roi is not None:
+                x_min, y_min, x_max, y_max = self.last_roi
+                cv2.putText(image,
+                            f"People ROI Count: {self.roi_people_count}",
+                            (x_min, y_min - 10),
+                            cv2.FONT_HERSHEY_SIMPLEX,
+                            0.8,
+                            (255, 255, 255),
+                            2)
 
         return image
 
@@ -1712,6 +1795,10 @@ class QueryGUI(threading.Thread):
         self.show_attr = tk.BooleanVar(value=True)
         chk = ttk.Checkbutton(control_frame, text="显示跟踪属性", variable=self.show_attr)
         chk.pack(side=tk.LEFT, padx=5)
+        #显示热力图
+        self.show_heatmap = tk.BooleanVar(value=True)
+        chk_heatmap = ttk.Checkbutton(control_frame, text="显示热力图", variable=self.show_heatmap)
+        chk_heatmap.pack(side=tk.LEFT, padx=5)
 
         self.create_button_group(control_frame)
 
@@ -1864,6 +1951,7 @@ class QueryGUI(threading.Thread):
                     for predictor in predictors:
                         predictor.set_query_search(new_query)
                         predictor.show_attr = self.show_attr.get()
+                        predictor.show_heatmap = self.show_heatmap.get()
 
                 print(f"成功更新过滤条件: {new_query}")
             except Exception as e:

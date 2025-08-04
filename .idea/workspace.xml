@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="995b1dd4-ad0e-4284-b8c7-e8de1c5fd21a" name="Changes" comment="SYNC">
-      <change afterPath="$PROJECT_DIR$/deploy/pipeline/config/examples/gonganju.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liu/police.png" afterDir="false" />
+    <list default="true" id="995b1dd4-ad0e-4284-b8c7-e8de1c5fd21a" name="Changes" comment="加了属性显示开关">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/pipeline/pipeline_gonganju_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/pipeline/pipeline_gonganju_v1.py" afterDir="false" />
     </list>
@@ -63,7 +61,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.HEDONG_V1.executor": "Debug",
+    "Python.HEDONG_V1.executor": "Run",
     "Python.camera_demo.executor": "Run",
     "Python.demo.executor": "Run",
     "Python.demo2.executor": "Run",
@@ -715,7 +713,7 @@
       <workItem from="1754275461151" duration="378000" />
       <workItem from="1754276276144" duration="108000" />
       <workItem from="1754302838036" duration="254000" />
-      <workItem from="1754304109483" duration="5445000" />
+      <workItem from="1754304109483" duration="9080000" />
     </task>
     <task id="LOCAL-00001" summary="1st">
       <option name="closed" value="true" />
@@ -781,7 +779,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754304493822</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="加了属性显示开关">
+      <option name="closed" value="true" />
+      <created>1754311944560</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1754311944560</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -805,7 +811,8 @@
     <MESSAGE value="加了黑白衣服的trick" />
     <MESSAGE value="None" />
     <MESSAGE value="SYNC" />
-    <option name="LAST_COMMIT_MESSAGE" value="SYNC" />
+    <MESSAGE value="加了属性显示开关" />
+    <option name="LAST_COMMIT_MESSAGE" value="加了属性显示开关" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -915,22 +922,22 @@
           <line>926</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_V2.py</url>
           <line>922</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_V2.py</url>
           <line>1016</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_V2.py</url>
           <line>242</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_Xue_V3.py</url>
           <line>915</line>
           <option name="timeStamp" value="45" />
@@ -940,45 +947,55 @@
           <line>166</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/liu/tools/camera_demo.py</url>
           <line>19</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_V3.py</url>
           <line>1120</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_V3.py</url>
           <line>1171</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_gonganju_v1.py</url>
-          <line>1119</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_gonganju_v1.py</url>
-          <line>1164</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_GUI_ZXN_V3.py</url>
           <line>1512</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_gonganju_v1.py</url>
-          <line>1512</line>
+          <line>1568</line>
           <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_gonganju_v1.py</url>
+          <line>1952</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_gonganju_v1.py</url>
+          <line>601</line>
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_gonganju_v1.py</url>
-          <line>1865</line>
-          <option name="timeStamp" value="58" />
+          <line>1683</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_gonganju_v1.py</url>
+          <line>597</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/deploy/pipeline/pipeline_gonganju_v1.py</url>
+          <line>585</line>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1008,7 +1025,7 @@
     <SUITE FILE_PATH="coverage/PaddleDetection$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1741696076168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/liu" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_camera_GUI_ZXN_V1.coverage" NAME="pipeline camera GUI ZXN V1 Coverage Results" MODIFIED="1744253086068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video__1_GUI__1_.coverage" NAME="pipeline video  1 GUI (1) Coverage Results" MODIFIED="1742389000700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$HEDONG_V1.coverage" NAME="HEDONG_V1 Coverage Results" MODIFIED="1754310411400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$HEDONG_V1.coverage" NAME="HEDONG_V1 Coverage Results" MODIFIED="1754315080955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$img2video.coverage" NAME="img2video Coverage Results" MODIFIED="1744679782437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/liu/tools" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_image_1.coverage" NAME="pipeline image 1 Coverage Results" MODIFIED="1742193395587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video__2_GUI.coverage" NAME="pipeline video  2 GUI Coverage Results" MODIFIED="1741784094096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
