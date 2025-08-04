@@ -1510,7 +1510,7 @@ class PipePredictor(object):
                 center_traj=center_traj)
 
         human_attr_res = result.get('attr')
-        if human_attr_res is not None:
+        if human_attr_res is not None and getattr(self, "show_attr", True):
             boxes = mot_res['boxes'][:, 1:]
             human_attr_res = human_attr_res['output']
             image = visualize_attr(image, human_attr_res, boxes) ##绘制ATTR 从boxex和human_attr_res入手 筛选文本.
@@ -1676,7 +1676,7 @@ class QueryGUI(threading.Thread):
         self.pipeline = pipeline
         self.logo_paths = (
             "liu/tjut.png",
-            "liu/jjzx.png"
+            "liu/police.png"
         )
         self.logo_images = []
         self.running = True
@@ -1708,6 +1708,11 @@ class QueryGUI(threading.Thread):
         control_frame.pack(fill=tk.X, pady=15)
 
         self.create_input_section(control_frame)
+        #show tracking attr
+        self.show_attr = tk.BooleanVar(value=True)
+        chk = ttk.Checkbutton(control_frame, text="显示跟踪属性", variable=self.show_attr)
+        chk.pack(side=tk.LEFT, padx=5)
+
         self.create_button_group(control_frame)
 
     def setup_styles(self):
@@ -1858,6 +1863,7 @@ class QueryGUI(threading.Thread):
 
                     for predictor in predictors:
                         predictor.set_query_search(new_query)
+                        predictor.show_attr = self.show_attr.get()
 
                 print(f"成功更新过滤条件: {new_query}")
             except Exception as e:
