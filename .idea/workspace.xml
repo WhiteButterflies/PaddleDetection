@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="995b1dd4-ad0e-4284-b8c7-e8de1c5fd21a" name="Changes" comment="加了划选人数功能，有点bug但能用">
-      <change afterPath="$PROJECT_DIR$/liu/police.jpg" afterDir="false" />
+    <list default="true" id="995b1dd4-ad0e-4284-b8c7-e8de1c5fd21a" name="Changes" comment="修改了图标位置">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/pipeline/pipeline_gonganju_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/pipeline/pipeline_gonganju_v1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/命令.txt" beforeDir="false" afterPath="$PROJECT_DIR$/命令.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liu/police.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/liu/police.png" beforeDir="false" afterPath="$PROJECT_DIR$/liu/police.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +96,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/xiangmu/PaddleDetection/liu/tools",
+    "last_opened_file_path": "C:/xiangmu/PaddleDetection/liu",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,11 +108,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xiangmu\PaddleDetection\liu" />
       <recent name="C:\xiangmu\PaddleDetection\liu\tools" />
       <recent name="C:\xiangmu\PaddleDetection\deploy\pipeline\config\examples" />
       <recent name="C:\xiangmu\PaddleDetection\deploy\pipeline" />
       <recent name="C:\xiangmu\PaddleDetection\demo" />
-      <recent name="C:\xiangmu\PaddleDetection\output_inference" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xiangmu\PaddleDetection\liu" />
@@ -718,7 +718,8 @@
       <workItem from="1754304109483" duration="10168000" />
       <workItem from="1754316208760" duration="7000" />
       <workItem from="1754358180292" duration="1181000" />
-      <workItem from="1754379854182" duration="451000" />
+      <workItem from="1754379854182" duration="1284000" />
+      <workItem from="1754381514914" duration="67000" />
     </task>
     <task id="LOCAL-00001" summary="1st">
       <option name="closed" value="true" />
@@ -816,7 +817,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754315903291</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="修改了图标位置">
+      <option name="closed" value="true" />
+      <created>1754380372386</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1754380372386</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -843,7 +852,8 @@
     <MESSAGE value="加了属性显示开关" />
     <MESSAGE value="加了划选估计人数功能" />
     <MESSAGE value="加了划选人数功能，有点bug但能用" />
-    <option name="LAST_COMMIT_MESSAGE" value="加了划选人数功能，有点bug但能用" />
+    <MESSAGE value="修改了图标位置" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了图标位置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1041,7 +1051,7 @@
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_now_video__demo2.coverage" NAME="pipeline now video  demo2 Coverage Results" MODIFIED="1743390215921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline.coverage" NAME="pipeline rstp Coverage Results" MODIFIED="1741681438031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$img2video.coverage" NAME="img2video Coverage Results" MODIFIED="1744679782437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/liu/tools" />
-    <SUITE FILE_PATH="coverage/PaddleDetection$HEDONG_V1.coverage" NAME="HEDONG_V1 Coverage Results" MODIFIED="1754380306395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/PaddleDetection$HEDONG_V1.coverage" NAME="HEDONG_V1 Coverage Results" MODIFIED="1754380989860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video.coverage" NAME="pipeline video Coverage Results" MODIFIED="1741700405561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$pipeline_video__1_GUI.coverage" NAME="pipeline video  1 GUI Coverage Results" MODIFIED="1742388916066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/PaddleDetection$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1741696076168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/liu" />
