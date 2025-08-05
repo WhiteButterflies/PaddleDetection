@@ -1758,8 +1758,8 @@ class QueryGUI(threading.Thread):
         super().__init__()
         self.pipeline = pipeline
         self.logo_paths = (
-            "liu/tjut.png",
-            "liu/police.png"
+            "liu/police.jpg",
+            "liu/tjut.png"
         )
         self.logo_images = []
         self.running = True
